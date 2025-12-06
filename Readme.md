@@ -25,7 +25,7 @@ This is a personal tracker, but if you reuse it or share it with others, follow 
 Topics covered (numbered)
 --------------------------
 
-1. 
+1. Basics - Data Types, Input/Output,Type Conversion and Casting, Conditionals, Loops, Switch, Functions
 
 Notes
 -----
