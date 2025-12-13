@@ -1,0 +1,64 @@
+## .gitignore for Java projects and common IDEs
+
+# macOS
+.DS_Store
+
+# Compiled class files
+*.class
+
+# Package distribution
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# Build directories
+/bin/
+/out/
+/build/
+/dist/
+/target/
+
+# Gradle
+.gradle/
+/.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Maven
+/.mvn/
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# NetBeans
+/nbproject/private/
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Windows
+Thumbs.db
+
+# Misc
+*.tmp
+*.bak
+*~
+tmp/
+temp/
+
+# End
