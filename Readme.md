@@ -28,7 +28,8 @@ Topics covered (numbered)
 1. Basics - Data Types, Input/Output,Type Conversion and Casting, Conditionals, Loops, Switch, Functions
 2. Patterns
 3. Java Collections
-4. Arrays
+4. Basic Maths
+5. Arrays
 
 Notes
 -----
