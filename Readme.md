@@ -29,7 +29,8 @@ Topics covered (numbered)
 2. Patterns
 3. Java Collections
 4. Basic Maths
-5. Arrays
+5. Basic Recursion
+6. Arrays
 
 Notes
 -----
