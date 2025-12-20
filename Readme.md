@@ -30,7 +30,8 @@ Topics covered (numbered)
 3. Java Collections
 4. Basic Maths
 5. Basic Recursion
-6. Arrays
+6. Basic Hashing
+7. Arrays
 
 Notes
 -----
