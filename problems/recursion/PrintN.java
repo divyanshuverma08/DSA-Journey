@@ -1,5 +1,7 @@
 // 1. https://www.geeksforgeeks.org/problems/print-gfg-n-times/1
-// 2. https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops3621/1 
+// 2. https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops3621/1
+// 3. https://www.geeksforgeeks.org/problems/print-n-to-1-without-loop/1
+
 package problems.recursion;
 
 public class PrintN {
