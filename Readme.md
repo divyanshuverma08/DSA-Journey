@@ -31,7 +31,8 @@ Topics covered (numbered)
 4. Basic Maths
 5. Basic Recursion
 6. Basic Hashing
-7. Arrays
+7. Sorting 1 - Selection, Bubble, Insertion
+8. Arrays
 
 Notes
 -----
