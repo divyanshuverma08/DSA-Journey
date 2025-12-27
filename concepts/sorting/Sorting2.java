@@ -11,63 +11,66 @@ public class Sorting2 {
 
         System.out.println(Arrays.toString(mergeTwoArrays(arr1, arr2)));
 
-        int[] arr3 = {3,1,2,4,1,5,2,6,4};
+        int[] arr3 = { 3, 1, 2, 4, 1, 5, 2, 6, 4 };
         int[] ans = mergeSortReturn(arr3, 0, arr3.length - 1);
         System.out.println(Arrays.toString(ans));
 
-        int[] arr4 = {4,6,2,5,7,9,1,3};
+        int[] arr4 = { 4, 6, 2, 5, 7, 9, 1, 3 };
         quickSort(arr4, 0, arr4.length - 1);
         System.out.println(Arrays.toString(arr4));
     }
 
-    static void quickSort(int[] arr, int low, int high){
-        //Base case - Always do for array has more than size 1
-        if(low<high){
-            int partition = findPartition(arr,low,high);
-            //Sort Left side of partition
+    static void quickSort(int[] arr, int low, int high) {
+        // Base case - Always do for array has more than size 1
+        if (low < high) {
+            int partition = findPartition(arr, low, high);
+            // Sort Left side of partition
             quickSort(arr, low, partition - 1);
-            //Sort Right side of partition
+            // Sort Right side of partition
             quickSort(arr, partition + 1, high);
         }
     }
 
-    static int findPartition(int[] arr, int low, int high){
+    static int findPartition(int[] arr, int low, int high) {
         int pivot = arr[low];
         int i = low; // left most
         int j = high; // right most
 
-        while(i<j){
-            //Move till ith ele < pivot to find first largest ele than pivot
-            while(arr[i]<=pivot && i <= high){
+        while (i < j) {
+            // Move till ith ele < pivot to find first largest ele than pivot
+            while (arr[i] <= pivot && i <= high) {
                 i++;
             }
-            //Move till jth ele > pivot to find first smallest ele than pivot
-            while(arr[j]>pivot && j>=low){
+            // Move till jth ele > pivot to find first smallest ele than pivot
+            while (arr[j] > pivot && j >= low) {
                 j--;
             }
-            //If they don't cross because after crossing we would have all small at left and all large at right
+            // If they don't cross because after crossing we would have all small at left
+            // and all large at right
             // swap to achieve left - smaller and right - larger
-            if(i<j) swap(arr, i, j);
+            if (i < j)
+                swap(arr, i, j);
         }
-        // Put pivot at jth index as left of pivot will be small and right of pivot will be large
+        // Put pivot at jth index as left of pivot will be small and right of pivot will
+        // be large
         swap(arr, low, j);
 
-        return j; //Partition
+        return j; // Partition
     }
 
-        static void swap(int arr[], int i, int j) {
+    static void swap(int arr[], int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
 
-
-    //This is if returned the array
-    static int[] mergeSortReturn(int[] arr, int low, int high){
-        if(low==high) return new int[]{arr[low]};
-        int mid = (low + high)/2;
+    // This is if returned the array
+    static int[] mergeSortReturn(int[] arr, int low, int high) {
+        if (low == high)
+            return new int[] { arr[low] };
+        int mid = (low + high) / 2;
         int[] left = mergeSortReturn(arr, low, mid);
-        int[] right = mergeSortReturn(arr, mid+1, high);
+        int[] right = mergeSortReturn(arr, mid + 1, high);
         return mergeTwoArrays(left, right);
     }
 
