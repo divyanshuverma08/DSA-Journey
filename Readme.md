@@ -35,6 +35,7 @@ Topics covered (numbered)
 8. Sorting 2 - MergeSort, QuickSort
 9. Searching - Linear Search
 10. Arrays - Easy, Medium, Hard
+11. Binary Search
 
 Notes
 -----
