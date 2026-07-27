@@ -36,6 +36,7 @@ Topics covered (numbered)
 9. Searching - Linear Search
 10. Arrays - Easy, Medium, Hard
 11. Binary Search - 1D Arrays, On Answers, 2D Arrays
+12. Strings - Basics/Easy, Medium
 
 Notes
 -----
